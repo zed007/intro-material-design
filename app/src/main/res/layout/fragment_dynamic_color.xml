@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rkzk.android.bblmaterialdesign.fragments.DynamicColorFragment"
+    android:padding="8dp"
+    android:clipToPadding="false">
+
+    <com.rkzk.android.bblmaterialdesign.customviews.AutofitRecyclerView
+        android:id="@+id/rcvDynamicColor"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"/>
+
+</FrameLayout>
