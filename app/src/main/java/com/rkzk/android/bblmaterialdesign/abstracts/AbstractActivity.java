@@ -1,7 +1,7 @@
 package com.rkzk.android.bblmaterialdesign.abstracts;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.rkzk.android.bblmaterialdesign.R;
@@ -10,7 +10,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.Optional;
 
-public abstract class AbstractActivity extends ActionBarActivity {
+public abstract class AbstractActivity extends AppCompatActivity {
 
     @Optional @InjectView(R.id.toolbar_actionbar) protected Toolbar mToolbar;
 

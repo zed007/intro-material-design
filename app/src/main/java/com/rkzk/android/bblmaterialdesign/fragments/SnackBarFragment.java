@@ -6,16 +6,13 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import com.rkzk.android.bblmaterialdesign.R;
 import com.rkzk.android.bblmaterialdesign.abstracts.AbstractFragment;
 
-import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
 

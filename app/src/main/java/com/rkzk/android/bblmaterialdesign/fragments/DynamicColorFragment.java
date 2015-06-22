@@ -9,11 +9,14 @@ import android.view.View;
 
 import com.rkzk.android.bblmaterialdesign.R;
 import com.rkzk.android.bblmaterialdesign.abstracts.AbstractFragment;
+import com.rkzk.android.bblmaterialdesign.activities.AppBarScrollActivity;
+import com.rkzk.android.bblmaterialdesign.activities.MainActivity;
 import com.rkzk.android.bblmaterialdesign.adapters.DynamicColorListAdapter;
 import com.rkzk.android.bblmaterialdesign.bo.ItemDynamicColor;
 import com.rkzk.android.bblmaterialdesign.customviews.AutofitRecyclerView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import butterknife.InjectView;
@@ -69,6 +72,15 @@ public class DynamicColorFragment extends AbstractFragment {
         datas.add(new ItemDynamicColor("http://images8.alphacoders.com/546/546902.jpg", "opperiens et succurrens s"));
         datas.add(new ItemDynamicColor("http://www.bleach-mx.fr/wp-content/uploads/fairy_tail_356_color_cleaning_written_by_ulquiorra90-d6qw8p6.jpg", "morati post haec milit"));
 
+        datas.add(new ItemDynamicColor("http://www.images-booknode.com/book_cover/679/full/bleach,-tome-40---the-lust-679222.jpg", "erit, quamobrem cum oratio ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones na"));
+        datas.add(new ItemDynamicColor("http://ru.playstation.com/media/tyTbT_mS/Bleach_Hero_vf1.JPG", "urator monetae extinctus est. Sericum enim et Asbolium supra dictos, quoniam cum hortaretur passim nominare, quos vellent, adiecta religione firm"));
+        datas.add(new ItemDynamicColor("http://fc08.deviantart.net/fs71/f/2014/315/5/1/smile___naruto__bolt__himawari_by_amien15-d85xna3.png", "tibus sollicite, quos insignes faciunt virgae dexteris aptatae velut tessera data castrensi iuxta vehiculi frontem omne textrinum incedit: hu"));
+        datas.add(new ItemDynamicColor("http://blog.lesoir.be/wp-content/uploads/sites/58/2012/05/naruto.jpg", "s ut militares quosdam perduceret ausos conspirasse Magnentio, cum reniti non possent, iussa licentius supergressus fluminis modo fortunis conpluri"));
+        datas.add(new ItemDynamicColor("http://static.comicvine.com/uploads/original/11111/111115829/3820418-4069398391-narut.jpg", "yzantiorum fuisse refertissimam atque ornatissimam signis quis ignorat? Qu"));
+        datas.add(new ItemDynamicColor("http://images.funadvice.com/photo/image/old/28367/l_eac12ec5643a543cf5357d444c375b3f.png", "os iunxerat imperiale praeceptum, dispicere litis exitialis certamina cogebatur abnuens et reclamans, adulatorum oblatrantibus turmis, bellicosu"));
+
+        Collections.shuffle(datas);
+
         mAdapter = new DynamicColorListAdapter(mActivity, datas);
 
         rcvDynamicColor.setAdapter(mAdapter);
@@ -83,8 +95,16 @@ public class DynamicColorFragment extends AbstractFragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
-        if (mActivity != null && mActivity.getSupportActionBar() != null) {
-            mActivity.getSupportActionBar().setTitle(getString(R.string.title_dynamic_color));
+        if(mActivity != null && mActivity instanceof MainActivity){
+            if (mActivity != null && mActivity.getSupportActionBar() != null) {
+                mActivity.getSupportActionBar().setTitle(getString(R.string.title_dynamic_color));
+            }
+        }else{
+            if(mActivity != null && mActivity instanceof AppBarScrollActivity){
+                if (mActivity != null && mActivity.getSupportActionBar() != null) {
+                    mActivity.getSupportActionBar().setTitle(getString(R.string.title_appbar_scroll));
+                }
+            }
         }
     }
 }

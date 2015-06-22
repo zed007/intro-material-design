@@ -24,7 +24,11 @@ public abstract class AbstractFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        mActivity = (AbstractActivity) activity;
+        try {
+            mActivity = (AbstractActivity) activity;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

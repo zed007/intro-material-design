@@ -13,7 +13,7 @@ import com.rkzk.android.bblmaterialdesign.helpers.AppHelper;
 import butterknife.InjectView;
 
 
-public class ImageDetailActivity extends AbstractActivity {
+public class ImageDetailTransitionIllustrateActivity extends AbstractActivity {
 
     @InjectView(R.id.imgBBL2)
     NetWorkImageView imgBBL;
@@ -32,7 +32,7 @@ public class ImageDetailActivity extends AbstractActivity {
 
     @Override
     protected int getContentViewResourceId() {
-        return R.layout.activity_image_detail;
+        return R.layout.activity_image_detail_transition_illustrate;
     }
 
     @Override

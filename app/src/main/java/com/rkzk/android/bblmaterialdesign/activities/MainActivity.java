@@ -1,5 +1,6 @@
 package com.rkzk.android.bblmaterialdesign.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
@@ -120,7 +121,10 @@ public class MainActivity extends AbstractActivity
                         .commit();
             }break;
 
-
+            case 10:{//startActivity
+                Intent intent = new Intent(this, AppBarScrollActivity.class);
+                startActivity(intent);
+            }break;
         }
     }
 }

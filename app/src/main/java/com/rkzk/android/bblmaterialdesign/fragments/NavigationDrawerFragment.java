@@ -10,7 +10,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -114,6 +114,7 @@ public class NavigationDrawerFragment extends Fragment {
                         getString(R.string.title_fab),
                         getString(R.string.title_floating_label),
                         getString(R.string.title_snackbar),
+                        getString(R.string.title_appbar_scroll),
 
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
@@ -277,7 +278,7 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
     private ActionBar getActionBar() {
-        return ((ActionBarActivity) getActivity()).getSupportActionBar();
+        return ((AppCompatActivity) getActivity()).getSupportActionBar();
     }
 
     /**

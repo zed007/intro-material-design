@@ -1,25 +1,13 @@
 package com.rkzk.android.bblmaterialdesign.fragments;
 
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.view.View;
-import android.view.ViewPropertyAnimator;
-import android.view.ViewTreeObserver;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.DecelerateInterpolator;
-import android.widget.LinearLayout;
 
 import com.rkzk.android.bblmaterialdesign.R;
 import com.rkzk.android.bblmaterialdesign.abstracts.AbstractFragment;
-import com.rkzk.android.bblmaterialdesign.helpers.AppHelper;
-
-import butterknife.InjectView;
 
 /**
  * A simple {@link Fragment} subclass.

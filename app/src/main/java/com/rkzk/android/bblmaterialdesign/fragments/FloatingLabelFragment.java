@@ -6,15 +6,12 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.widget.AppCompatEditText;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.rkzk.android.bblmaterialdesign.R;
 import com.rkzk.android.bblmaterialdesign.abstracts.AbstractFragment;
 
-import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
 

@@ -11,7 +11,7 @@ import android.view.View;
 
 import com.rkzk.android.bblmaterialdesign.R;
 import com.rkzk.android.bblmaterialdesign.abstracts.AbstractFragment;
-import com.rkzk.android.bblmaterialdesign.activities.ImageDetailActivity;
+import com.rkzk.android.bblmaterialdesign.activities.ImageDetailTransitionIllustrateActivity;
 import com.rkzk.android.bblmaterialdesign.customviews.NetWorkImageView;
 
 import butterknife.InjectView;
@@ -69,7 +69,7 @@ public class TransitionFragment extends AbstractFragment implements View.OnClick
 
         if(view == imgBBL){
 
-            Intent intent = new Intent(mActivity, ImageDetailActivity.class);
+            Intent intent = new Intent(mActivity, ImageDetailTransitionIllustrateActivity.class);
 
             String transitionName = getString(R.string.transition_image_detail);
 
